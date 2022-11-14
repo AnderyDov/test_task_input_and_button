@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../src/index.css" /> -->
+    <link rel="icon" href="./favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@210;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>MENU DELIVERY CAR</title>
+  </head>
+  <body>
+    <!-- Квадрат при загрузке страницы -->
+    <div class="square">
+      <div class="square_min top-left"></div>
+      <div class="square_min top-right"></div>
+      <div class="square_min bottom-right"></div>
+      <div class="square_min bottom-left"></div>
+      <button class="circle disabled unvisibility">Нажать</button>
+    </div>
+    <!-- Форма для выбора автомобтля -->
+    <form class="form hide" action="/">
+      <!-- <div class="icons"></div> -->
+      <!-- Раскрывающийся список для выбора марки автомобиля -->
+      <label class="form_label"> Марка автомобиля </label>
+      <select class="mark form_select">
+        <option selected disabled value="1">Выберите марку</option>
+      </select>
+      <!-- Раскрывающийся список для выбора модели автомобиля -->
+      <label class="form_label"> Mодель </label>
+      <select class="model form_select" name="" id="">
+        <option selected disabled value="1">Выберите модель</option>
+      </select>
+      <!-- Раскрывающийся список для выбора года выпуска автомобиля -->
+      <label class="form_label"> Год выпуска </label>
+      <select class="year form_select" name="" id="">
+        <option selected disabled value="1">Выберите год выпуска</option>
+      </select>
+      <!-- Блок с полем для ввода таты и календарёи jquery -->
+      <div class="calendar hide">
+        <label class="form_label">Доступный диапазон доставки</label>
+        <div class="range_dates"></div>
+        <input type="text" id="datepicker" />
+      </div>
+      <!-- Кнопка подтверждения выбора -->
+      <button class="delivbut disabled">доставить</button>
+    </form>
+    <!-- Блок показа парметров выбранного автомобиля и даты доставки -->
+    <div class="showcar hide">
+      <label>Марка: </label>
+      <div class="showmark"></div>
+      <label>Модель:</label>
+      <div class="showmodel"></div>
+      <label>Год выпуска:</label>
+      <div class="showyear"></div>
+      <label>Дата доставки:</label>
+      <div class="showdelivery"></div>
+      <button class="newround">заново</button>
+    </div>
+  </body>
+  <!-- <script src="../src/index.js" type="module"></script> -->
+  <!-- <script src="../src/datapcet_Jquery.js"></script> -->
+</html>
