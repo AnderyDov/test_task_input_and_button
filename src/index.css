@@ -1,0 +1,65 @@
+/* Основные настройки */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #a0a09f;
+  font-family: 'Roboto Mono', monospace;
+}
+.image {
+  width: 383px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./image/stream_panck_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  width: 356px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  width: 190px;
+  height: 52px;
+  background: #90939dbb;
+  padding: 0;
+  outline: 2px solid white;
+  border: none;
+  margin-right: 4px;
+  text-indent: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.input::placeholder {
+  color: rgb(45, 45, 45);
+}
+.button {
+  width: 154px;
+  height: 52px;
+  background: #fe0000;
+  color: white;
+  outline: 2px solid white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+.button:active {
+  box-shadow: inset 0px 0px 2px 2px black;
+}
+@media (min-width: 768px) {
+  body {
+    background: red;
+  }
+}
